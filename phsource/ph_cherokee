@@ -23,18 +23,11 @@
 // (³²) falling: 122, 120, 115, 106, 97
 
 // A REFERENCE GRAMMAR OF OKLAHOMA CHEROKEE (2008)
-// Short vowels preceding /h/ are devoiced, pg 45 (how to do this espeak-ng?)
 // Word final vowels are nasalized
 // Vowels are nasalized after a nasal consonant
 // Vowels are either long or short; a long vowel takes
 // approximately twice as long to pronounce as its
 // short counterpart., pg 46
-
-//int pitch1 = 0;
-//int pitch2 = 0;
-//int pitch_env = 0;
-//int amp_env = 0;
-//IF (pitch1 >= pitch2) the pitch values get swapped (???)
 
 phoneme 1 // low fall (¹), long vowels only
   stress brk rate
@@ -105,11 +98,6 @@ phoneme 0~
   FMT(vnasal/aa_n4)
 endphoneme
 
-phoneme 0#
-	vwl  starttype #a   endtype #a
-	vls glt apr  // [h]
-	WAV(h/ha, 70)
-endphoneme
 
 phoneme e
   vwl starttype #e endtype #e
@@ -123,11 +111,6 @@ phoneme e~
   FMT(vnasal/ee_n2)
 endphoneme
 
-phoneme e#
-  vwl starttype #e endtype #e
-	vls glt apr  // [h]
-	WAV(h/he, 70)
-endphoneme
 
 phoneme i
   vwl starttype #i endtype #i
@@ -143,11 +126,6 @@ phoneme i~
   FMT(vnasal/i_n)
 endphoneme
 
-phoneme i#
-  vwl starttype #i endtype #i
-	vls glt apr  // [h]
-	WAV(h/hi, 70)
-endphoneme
 
 // o, ọ
 phoneme o
@@ -163,11 +141,6 @@ phoneme o~
   FMT(vnasal/o_n)
 endphoneme
 
-phoneme o#
-	vwl starttype #o  endtype #o
-	vls glt apr  // [h]
-	WAV(h/ho, 70)
-endphoneme
 
 // u, ụ
 //from ph_base2
@@ -184,16 +157,11 @@ phoneme u~
   FMT(vnasal/u_n)
 endphoneme
 
-phoneme u#
-	vwl starttype #u  endtype #u
-	vls glt apr  // [h]
-	WAV(h/hu, 70)
-endphoneme
 
 phoneme &~
   vwl  starttype #@ endtype #@
   ipa ɐU+0303
-  length 180
+  length 225
   IF thisPh(isFinalVowel) THEN
     FMT(vnasal/a#_n2)
   ELSE
@@ -201,21 +169,11 @@ phoneme &~
   ENDIF
 endphoneme
 
-phoneme &~#
-	vwl  starttype #@ endtype #@
-	vls glt apr  // [h]
-	WAV(h/h@, 70)
-endphoneme
 
 phoneme h
   vls glt apr
   ipa h
   
-  IF prevPhW(isVowel) AND nextPhW(isNotVowel) THEN
-  	//length 25
-  	lengthmod 1
-  ENDIF
-   
   IF nextPhW(j) THEN
     length 100
     WAV(h/h_)  // no vowel following
@@ -244,7 +202,7 @@ phoneme h
   	length 80
     WAV(h/hu)
   ELSE
-    length 100
+	length 100
     WAV(h/h_)  // no vowel following
   ENDIF
 endphoneme

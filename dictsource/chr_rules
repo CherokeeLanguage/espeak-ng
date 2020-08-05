@@ -1,4 +1,6 @@
 
+//TODO: l followed directly by s is really the lateral fricative hl
+
 //tones
 .L01	xb xc xcxd xdxc xd xdxf xfxd xf
 
@@ -62,11 +64,6 @@
     a	(L03L03L01 0
     a	(L03L03L03L01 0
     
-    ah	(L01 0#
-    ah	(L03L01 0#
-    ah	(L03L03L01 0#
-    ah	(L03L03L03L01 0#
-    
 .group e
     e	e:
     L02)	e	e~:
@@ -92,11 +89,6 @@
     L02)	e	(L03L03L01 e~
     L02)	e	(L03L03L03L01 e~
     
-	eh	(L01 e#
-    eh	(L03L01 e#
-    eh	(L03L03L01 e#
-    eh	(L03L03L03L01 e#
-
 .group i
     i	i:
     L02)	i	i~:
@@ -121,11 +113,6 @@
     L02)	i	(L03L01 i~
     L02)	i	(L03L03L01 i~
     L02)	i	(L03L03L03L01 i~
-    
-	ih	(L01 i#
-    ih	(L03L01 i#
-    ih	(L03L03L01 i#
-    ih	(L03L03L03L01 i#
     
 .group o
     o	o:
@@ -152,11 +139,6 @@
     L02)	o	(L03L03L01 o~
     L02)	o	(L03L03L03L01 o~
     
-	oh	(L01 o#
-    oh	(L03L01 o#
-    oh	(L03L03L01 o#
-    oh	(L03L03L03L01 o#
-        
 .group u
     u	u:
     L02)	u	u~:
@@ -182,11 +164,6 @@
     L02)	u	(L03L03L01 u~
     L02)	u	(L03L03L03L01 u~
     
-	uh	(L01 u#
-    uh	(L03L01 u#
-    uh	(L03L03L01 u#
-    uh	(L03L03L03L01 u#
-        
 .group v
     v	&~:
     
@@ -204,74 +181,35 @@
     v	(L03L03L01 &~
     v	(L03L03L03L01 &~
     
-	vh	(L01 &~#
-    vh	(L03L01 &~#
-    vh	(L03L03L01 &~#
-    vh	(L03L03L03L01 &~#
-
 .group ạ
     ạ 0
     L02) ạ 0~
     ạ (_ 0~43
     
-	ạh	(L01 0#
-    ạh	(L03L01 0#
-    ạh	(L03L03L01 0#
-    ạh	(L03L03L03L01 0#    
-
 .group ẹ
     ẹ e
     L02) ẹ e~
     ẹ (_ e~43
-    
-    ẹh	(L01 e#
-    ẹh	(L03L01 e#
-    ẹh	(L03L03L01 e#
-    ẹh	(L03L03L03L01 e#
     
 .group ị
     ị i
     L02) ị i~
     ị (_ i~43
     
-    ịh	(L01 i#
-    ịh	(L03L01 i#
-    ịh	(L03L03L01 i#
-    ịh	(L03L03L03L01 i#
-    
-    
 .group ọ
     ọ o
     L02) ọ o~
     ọ (_ o~43
-    
-    ọh	(L01 o#
-    ọh	(L03L01 o#
-    ọh	(L03L03L01 o#
-    ọh	(L03L03L03L01 o#
-    
     
 .group ụ
     ụ u
     L02) ụ u~
     ụ (_ u~43
     
-    ụh	(L01 u#
-    ụh	(L03L01 u#
-    ụh	(L03L03L01 u#
-    ụh	(L03L03L03L01 u#
-    
-    
 .group ṿ
     ṿ &~
     ṿ (_ &~43
     
-    ṿh	(L01 &~#
-    ṿh	(L03L01 &~#
-    ṿh	(L03L03L01 &~#
-    ṿh	(L03L03L03L01 &~#
-    
-
 .group ch
     ch tS
     
